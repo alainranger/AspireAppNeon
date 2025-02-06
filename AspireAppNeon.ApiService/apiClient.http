@@ -1,0 +1,15 @@
+@baseUrl = https://localhost:7574
+
+# @name createContest
+POST {{baseUrl}}/api/blog HTTP/1.1
+content-type: application/json
+
+{
+  "Title": "Blog Test 1",
+  "Content": "Cecci est un test de blog"
+}
+
+###
+
+GET {{baseUrl}}/api/blog HTTP/1.1
+content-type: application/json
